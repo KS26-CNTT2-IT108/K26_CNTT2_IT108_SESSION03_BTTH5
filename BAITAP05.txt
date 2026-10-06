@@ -1,0 +1,26 @@
+SESSION03
+Bài 5 : Phân tích tốc độ truyền dữ liệu và quản lý đường dẫn tệp an toàn
+
+Tên lớp: HCM K26 CNTT2
+Môn học: Nhập môn công nghệ thông tin
+Họ và tên: LƯƠNG THANH THƯ
+
+Phần 1: Phân tích và so sánh.
+Bảng so sánh đường dẫn tuyệt đối và tương đối.
+Tiêu chí	Tuyệt đối	Tương đối
+Ví dụ	C:\Users\Ban_Than\Desktop\Du_An\du-lieu\db.csv	../du-lieu/db.csv
+Cách ghi	Ghi đầy đủ từ ổ đĩa gốc	Tính từ chỗ file code đang đứng
+Sang máy khác	Dễ lỗi vì máy kia không có đúng thư mục đó	Vẫn chạy nếu giữ nguyên cấu trúc thư mục
+Nên dùng khi	Cần trỏ đúng một vị trí cố định	Chia sẻ dự án, làm việc nhóm
+Mbps là bit, còn dung lượng file tính bằng Byte (1 Byte = 8 bit) nên phải đổi đơn vị trước:        Đổi 1GB = 1024MB
++ Tốc độ: 80 Mbps : 8 = 10 MB/s
++ Dung lượng: 2 GB = 2 x 1024 = 2048 MB
++ Thời gian: 2048 : 10 = 204,8 giây (khoảng 3 phút 25 giây)
+Phần 2: Hành động.
+Viết lại bằng Relative Path (đường dẫn gốc: C:\Users\Ban_Than\Desktop\Du_An\du-lieu\db.csv)
+- Code nằm trong thư mục con như src: ../du-lieu/db.csv.. là lùi ra một cấp rồi vào data.
+- Code nằm ngay trong thư mục Project: ./du-lieu/db.csv. Dấu . là thư mục hiện tại.
+Các bước thiết lập "View Options" để nhận diện file mã độc
+- Mở File Explorer (Win + E).
+- Chọn tab View.
+- Chọn Show, tick vào File name extensions.
